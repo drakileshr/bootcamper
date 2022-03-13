@@ -5,7 +5,7 @@ options(
   dplyr.print_min = 6, 
   dplyr.print_max = 6,
   width = 100
-  )
+)
 # figure height, width, dpi
 knitr::opts_chunk$set(echo = TRUE, 
                       fig.width = 5, 
@@ -22,16 +22,14 @@ dev.off <- function(){
 # countdown
 library(countdown)
 # conflicted
-library(conflicted)
-conflict_prefer("filter", "dplyr")
 ```
 
 layout: true
-  
-<div class="my-footer">
-<span>
-<a href="https://rstd.io/bootcamper" target="_blank">rstd.io/bootcamper</a>
-</span>
-</div> 
 
----
+<div class="my-footer">
+  <span>
+  <a href="https://akileshr.github.io" target="_blank">akileshr.github.io</a>
+  </span>
+  </div> 
+  
+  ---

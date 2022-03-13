@@ -1,5 +1,5 @@
 ---
-title: "The whole game <br> `r emo::ji('space_invader')`"
+title: "Let's eat something .... <br> "
 output:
   xaringan::moon_reader:
     css: ["../slides-style.css", "../xaringan-themer.css"]
@@ -21,7 +21,6 @@ output:
 
 ```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
-library(nycflights13)
 ```
 
 class: middle
