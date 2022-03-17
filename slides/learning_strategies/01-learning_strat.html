@@ -64,7 +64,7 @@ class: highlight-last-item
 - Please use the survey mode to answer the question ...
   - **What are you feeling right now ? (You can choose more than one option!)**
 --
-<div class="countdown" id="timer_62310d0e" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_62323143" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -79,164 +79,71 @@ class: inverse, center, middle
 
 ---
 
-# Some Tips
-
+# What do you understand by "active learning" ?
 
 .pull-left[
-An example using a leading `*`:
-
-    ```r
-    if (TRUE) {
-    ** message("Very important!")
-    }
-    ```
-Output:
-```r
-if (TRUE) {
-* message("Very important!")
-}
-```
-
-This is invalid R code, so it is a plain fenced code block that is not executed.
+- When was the last time 
+  - you "sat" in someone's class ? 
+  - some colleague else sat in your class ?
+--
+- When was the last you saw your own class/presentation ?
+  - Zoom
+  - Live class recorded
+- When was the last time you had your teaching materials reviewed by someone else?
 ]
 
 .pull-right[
-An example using `{{}}`:
+- Lesson Study
 
-````
-```{r tidy=FALSE}
-if (TRUE) {
-*{{ message("Very important!") }}
-}
-```
-````
-Output:
-
-```r
-if (TRUE) {
-* message("Very important!") 
-}
-```
-
-```
-## Very important!
-```
-
-It is valid R code so you can run it. Note that `{{}}` can wrap an R expression of multiple lines.
+- Learning Study
 ]
 
 ---
 
-# Some Tips
-
-An example of using the trailing comment `#&lt;&lt;` to highlight lines:
-
-````markdown
-```{r tidy=FALSE}
-library(ggplot2)
-ggplot(mtcars) + 
-  aes(mpg, disp) + 
-  geom_point() +   #&lt;&lt;
-  geom_smooth()    #&lt;&lt;
-```
-````
-
-Output:
+# Text Books
 
 
-```r
-library(ggplot2)
-ggplot(mtcars) + 
-  aes(mpg, disp) + 
-* geom_point() +
-* geom_smooth()
-```
+---
+# Metacognitive strategies
+- Fancy term for "thinking about cognitive skills"
+---
+
+# Activity
+- All odd numbered persons turn around
+- Even number persons continue to watch the screen carefully
+&lt;video&gt;
+---
+
+# All turn back
+- Odd numbered people answer the question on your screen (Even numbered people please wait)
+--
+- Even numbered people answer the question on your screen
+--
+- Use two modes of content delivery 
+  - Audio + visual.
+      - Visual can be text or image or both
+      - When using both, they must NOT repeat
+  - Audio must not repeat "ditto" what is on the screen
+---
+
+# Lazy Teaching
+- What is better?
+  - 80 % portion covered in class &amp; student studying 50% of taught lessons ?
+  - 50% coverage and student gaining 80% of your taught lessons ?
+--
+- Some difficulty is GOOD for learning for all students
+- MORE difficult is BETTER for learning for some students
+- MOST difficult is BEST for learning, but only a few manage
 
 ---
 
-# Some Tips
-
-When you enable line-highlighting, you can also use the chunk option `highlight.output` to highlight specific lines of the text output from a code chunk. For example, `highlight.output = TRUE` means highlighting all lines, and `highlight.output = c(1, 3)` means highlighting the first and third line.
-
-````md
-```{r, highlight.output=c(1, 3)}
-head(iris)
-```
-````
-
-
-```
-*##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
-## 1          5.1         3.5          1.4         0.2  setosa
-*## 2          4.9         3.0          1.4         0.2  setosa
-## 3          4.7         3.2          1.3         0.2  setosa
-## 4          4.6         3.1          1.5         0.2  setosa
-## 5          5.0         3.6          1.4         0.2  setosa
-## 6          5.4         3.9          1.7         0.4  setosa
-```
-
-Question: what does `highlight.output = c(TRUE, FALSE)` mean? (Hint: think about R's recycling of vectors)
-
----
-
-# Some Tips
-
-- To make slides work offline, you need to download a copy of remark.js in advance, because **xaringan** uses the online version by default (see the help page `?xaringan::moon_reader`).
-
-- You can use `xaringan::summon_remark()` to download the latest or a specified version of remark.js. By default, it is downloaded to `libs/remark-latest.min.js`.
-
-- Then change the `chakra` option in YAML to point to this file, e.g.
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        chakra: libs/remark-latest.min.js
-    ```
-
-- If you used Google fonts in slides (the default theme uses _Yanone Kaffeesatz_, _Droid Serif_, and _Source Code Pro_), they won't work offline unless you download or install them locally. The Heroku app [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts) can help you download fonts and generate the necessary CSS.
-
----
-
-# Macros
-
-- remark.js [allows users to define custom macros](https://github.com/yihui/xaringan/issues/80) (JS functions) that can be applied to Markdown text using the syntax `![:macroName arg1, arg2, ...]` or `![:macroName arg1, arg2, ...](this)`. For example, before remark.js initializes the slides, you can define a macro named `scale`:
-
-    ```js
-    remark.macros.scale = function (percentage) {
-      var url = this;
-      return '&lt;img src="' + url + '" style="width: ' + percentage + '" /&gt;';
-    };
-    ```
-
-    Then the Markdown text
-
-    ```markdown
-    ![:scale 50%](image.jpg)
-    ```
-
-    will be translated to
-    
-    ```html
-    &lt;img src="image.jpg" style="width: 50%" /&gt;
-    ```
-
----
-
-# Macros (continued)
-
-- To insert macros in **xaringan** slides, you can use the option `beforeInit` under the option `nature`, e.g.,
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          beforeInit: "macros.js"
-    ```
-
-    You save your remark.js macros in the file `macros.js`.
-
-- The `beforeInit` option can be used to insert arbitrary JS code before `remark.create()`. Inserting macros is just one of its possible applications.
-
+# Being inclusive and equitable
+- Three levels of lesson objectives in your objectives
+  - An ideal expected learning goal *Ideal*
+--
+  - A bare minimum learning goal (for those on the edge of learning &amp; not learning) *Expected*
+--
+  - A bar above the ideal (for those exemplar students) *Optional*
 ---
 
 # CSS
