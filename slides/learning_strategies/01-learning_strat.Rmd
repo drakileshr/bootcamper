@@ -35,45 +35,64 @@ __Akilesh Ramasamy__
 ]
 ]
 ---
-class: center, middle
-
-## About you?
-
----
 class: highlight-last-item
 
 ## Logistics
 
-- Everything in one place:[akileshr.github.io](http://akileshr.github.io)
-
---
-- Everything in one place: [localhost:8787](http://localhost:8787)
-  - Login: Your Employee ID  
-  - Password: Your Mobile Number (that you shared in the initial registration form)  
-
---
 - Asking for help: 
   - We will be using [partici.fi](http://partici.fi) for all our live interactions.
-  - Type in chat in Q & A session (but if I don't see it, feel free to interrupt!)
+  - Type in chat in Q & A session (but if I don't see it, feel free to interrupt!). 
   - Or just interrupt!
 ---
 # Hello Sensei
+```{r echo=FALSE,out.height="80%",fig.align="center"}
+knitr::include_graphics("img/particify.png")
+```
+**https://partici.fi**            Enter the code: **2053 3883**
+---
+# Using Partici.fi (CODE: 20533883)
+```{r echo=FALSE,out.height="80%",fig.align="top center"}
+knitr::include_graphics("img/particify.png")
+```
+- Click on the `r emo::ji("speech")` Q & A and Click on **"Leave a post"** OR **+**
+- Write a word/any short phrase in the Q & A Chat box.
 
-```{r echo=FALSE,out.width="100%",fig.align="center"}
+--
+- You can vote `r emo::ji("+1")`<span style="color: lightgreen;">^</span> or vote down `r emo::ji('-1')`<span style="color: orange;">v</span>  or remain neutral `r emo::ji("deadpan")`(and)
+- you _can_ change your vote
+--
+```{r}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 3, play_sound = "../sound/ding.mp3", warn_when = 60)
+```
+
+---
+# Using Partici.fi (CODE: 20533883)
+
+```{r echo=FALSE,out.height="80%",fig.align="top center"}
 knitr::include_graphics("img/particify.png")
 ```
 
---
-- Please use the survey mode to answer the question ...
-  - **What are you feeling right now ? (You can choose more than one option!)**
---
-```{r setup, include=FALSE, echo = FALSE} 
+- On the left side of screen, choose use the `r emo::ji("bar_chart")` to enter into **survey mode**  
+  - **What are you feeling right now ?**
+  - _You can choose more than one option!_
+```{r echo=FALSE,out.height="80%",fig.align="top center"}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
-```
-```{ r }
 library(countdown)
-countdown(minutes = 10)
+countdown(minutes = 3, play_sound = "../sound/ding.mp3", warn_when = 60)
 ```
+---
+# Using Partici.fi (CODE: 20533883)
+
+```{r echo=FALSE,out.width="100%",fig.align="top center"}
+knitr::include_graphics("img/particify.png")
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 1, play_sound = "../sound/ding.mp3", warn_when = 20)
+```
+- **Have you all understood the use of partici.fi?**  
+- On left side please choose ${\\ }^`r emo::ji("+1")`{\\  }_`r emo::ji("-1")`$
 
 ---
 # Results
@@ -85,59 +104,86 @@ class: inverse, center, middle
 # Get Started
 
 ---
-
-# What do you understand by "active learning" ?
-
-.pull-left[
-- When was the last time 
-  - you "sat" in someone's class ? 
-  - some colleague else sat in your class ?
---
-- When was the last you saw your own class/presentation ?
-  - Zoom
-  - Live class recorded
-- When was the last time you had your teaching materials reviewed by someone else?
-]
-
-.pull-right[
-- Lesson Study
-
-- Learning Study
-]
-
----
-
-# Text Books
-
-
----
 # Metacognitive strategies
+
 - Fancy term for "thinking about cognitive skills"
+
 ---
 
 # Activity
+
 - All odd numbered persons turn around
 - Even number persons continue to watch the screen carefully
-<video>
+
 ---
 
 # All turn back
+
 - Odd numbered people answer the question on your screen (Even numbered people please wait)
+
 --
 - Even numbered people answer the question on your screen
+
+---
+class:middle, center
+
+# Dual coding
+.center[
+```{r echo=FALSE,fig.show='hold',out.width="10%",out.height="10%", fig.align='top left', fig.pos= "h"}
+knitr::include_graphics("img/ear.png")
+knitr::include_graphics("img/eye.png")
+```
+
+Use **two modes** of content delivery  
+]
 --
-- Use two modes of content delivery 
-  - Audio + visual.
-      - Visual can be text or image or both
-      - When using both, they must NOT repeat
-  - Audio must not repeat "ditto" what is on the screen
+.center[
+Audio + visual]
+--
+.center[
+  Spatio-temporally linked
+  non-repetitive
+]
+--
+.center[
+.pull-left[
+**Visual**  
+text, image  or both  
+]
+]
+--
+.center[
+.pull-left[
+**Image & Text**  
+spatial proximity & non-repetitive  
+]
+]
+--
+.center[
+.pull-left[
+  **Visual Presentation & Audio**  
+    temporal proximity & non-repetitive
+]
+]
+--
+.center[
+.pull-left[
+  **Complement** each other  
+    Non-repetitive
+]
+]
+
 ---
 
 # Lazy Teaching
+
 - What is better?
   - 80 % portion covered in class & student studying 50% of taught lessons ?
   - 50% coverage and student gaining 80% of your taught lessons ?
---
+---
+
+# Insight into "learning"
+
 - Some difficulty is GOOD for learning for all students
 - MORE difficult is BETTER for learning for some students
 - MOST difficult is BEST for learning, but only a few manage
@@ -145,40 +191,79 @@ class: inverse, center, middle
 ---
 
 # Being inclusive and equitable
+
 - Three levels of lesson objectives in your objectives
+
+--
   - An ideal expected learning goal *Ideal*
+
 --
   - A bare minimum learning goal (for those on the edge of learning & not learning) *Expected*
+
 --
   - A bar above the ideal (for those exemplar students) *Optional*
 ---
-```{r echo = FALSE, message = FALSE,  }
-library(googlesheets4)
-library(magrittr)
-library(dplyr)
-library(ggplot2)
-gs4_deauth()
-gs3<- gs4_example("gapminder") %>%
-  read_sheet(range = "Asia!A:D")
-gs3 %>% filter(gs3$country == "India"| gs3$country == "Afghanistan") %>%
-  filter(!is.na(country)) %>% 
-  ggplot2::ggplot(aes(
-    y = lifeExp, 
-    x = year, 
-    color = country, 
-    fill = country))  + 
-  geom_point() + 
-  geom_line() + 
-  geom_smooth(method = "glm") + 
-  theme_light()
 
+# Activity 1: Active Learning
 
+- https://partici.fi (CODE: 20533883)  
+
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
 ```
+- **What do you understand by "active learning" ?**
+
+--
+- [Music](https://music.youtube.com/watch?v=2TvWZEVf6go&list=RDAMVM2TvWZEVf6go]Music)  
+
 ---
-class: center, middle
 
-# Thanks!
+# Results
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+https://ars.particify.de/present/20533883
 
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr/), and [R Markdown](https://rmarkdown.rstudio.com).
+---
+
+# Text Books
+
+- **Do you suggest specific text-books and page numbers where to read something from ?**  
+- Do your students **know** how to read from a text-book?  
+- Book reading is an art ...
+- Make them **read** text-books**
+- Teach them to "skim" a topic **Before** class (PREVIEW)
+
+---
+
+# Study Cycle (Not to confuse with "learning cycle")
+
+- Preview `r emo::ji("sunglasses")`
+
+--
+- Attend Class `r emo::ji("school")`
+
+--
+- Make Notes `r emo::ji("writing_hand")`
+
+--
+- Paraphrase - Expand & Condense `r emo::ji("books")`
+
+--
+- Review/Revise `r emo::ji("bookmark")`
+
+--
+- Test Oneself `r emo::ji("interrobang")`
+
+--
+- Teach others `r emo::ji("professor")` `r emo::ji("student")`
+
+---
+# Logistics (unused)
+
+- Everything in one place:[akileshr.github.io](http://akileshr.github.io)
+
+--
+- Everything in one place: [localhost:8787](http://localhost:8787)
+  - Login: Your Employee ID  
+  - Password: Your Mobile Number (that you shared in the initial registration form)  

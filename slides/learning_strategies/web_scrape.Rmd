@@ -1,0 +1,64 @@
+---
+title: "Interactive Presentation Ninja"
+subtitle: "⚔<br/>with interactingan"
+author: "Juan Cruz Rodriguez"
+institute: "FAMAF - UNC"
+date: "2020/01/10 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+```{r, eval = FALSE, echo = FALSE, message = FALSE,  }
+library(googlesheets4)
+library(magrittr)
+library(dplyr)
+library(ggplot2)
+gs4_deauth()
+gs3<- gs4_example("gapminder") %>%
+  read_sheet(range = "Asia!A:D")
+gs3 %>% filter(gs3$country == "India"| gs3$country == "Afghanistan") %>%
+  filter(!is.na(country)) %>% 
+  ggplot2::ggplot(aes(
+    y = lifeExp, 
+    x = year, 
+    color = country, 
+    fill = country))  + 
+  geom_point() + 
+  geom_line() + 
+  geom_smooth(method = "glm") + 
+  theme_light()
+
+
+```
+---
+```{r, echo = FALSE}
+library(googlesheets4)
+library(magrittr)
+library(dplyr)
+library(ggplot2)
+
+options(
+    gargle_oauth_email = "akident@gmail.com",
+    gargle_oauth_cache = "F:\\Desktop/akil_docs/drakileshr_git/bootcamper/.cache",
+    gargle_oob_default = TRUE
+)
+gs4_auth(
+  email = gargle::gargle_oauth_email(),
+  path = NULL,
+  scopes = "https://www.googleapis.com/auth/spreadsheets",
+  cache = gargle::gargle_oauth_cache(),
+  use_oob = gargle::gargle_oob_default(),
+  token = NULL
+)
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1_YcMr1zGjYLYLY-np4KAbeW_zXjR6Oo54KWChyYzRuk/edit?usp=sharing") %>% data.frame() -> responses
+title<- gsub(pattern = "\\.", replacement = " ", x = colnames(responses)[2])
+```
+# `r title`  
+
+```{r echo = FALSE,cache.lazy=TRUE}
+wordcloud<- wordcloud::wordcloud( responses[,2],scale = c(4,0.25), min.freq = 1, rot.per = 0.3, random.color = TRUE)
+```

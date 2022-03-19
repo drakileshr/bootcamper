@@ -6,3 +6,4 @@ solutions
 rsconnect/
 images.key
 images/
+.cache*
