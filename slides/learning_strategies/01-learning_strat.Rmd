@@ -4,6 +4,7 @@ output:
   xaringan::moon_reader:
     css: ["../slides-style.css", "../xaringan-themer.css"]
     lib_dir: libs
+    chakra: "libs/remark-latest.min.js"
     nature:
       highlightStyle: solarized-light
       highlightLines: true
