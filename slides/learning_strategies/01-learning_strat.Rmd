@@ -38,30 +38,30 @@ __Akilesh Ramasamy__
 ---
 class: highlight-last-item
 
-## Logistics
+## Hello Senpai!
 
 - Asking for help: 
   - We will be using [partici.fi](http://partici.fi) for all our live interactions.
   - Type in chat in Q & A session (but if I don't see it, feel free to interrupt!). 
   - Or just interrupt!
 ---
-# Hello Sensei
-```{r echo=FALSE,out.height="80%",fig.align="center"}
-knitr::include_graphics("img/particify.png")
-```
-**https://partici.fi**            Enter the code: **2053 3883**
----
-# Using Partici.fi (CODE: 20533883)
+# Using Partici.fi (CODE: 20533883) - Q&A Mode
 ```{r echo=FALSE,out.height="80%",fig.align="top center"}
 knitr::include_graphics("img/particify.png")
 ```
-- Click on the `r emo::ji("speech")` Q & A and Click on **"Leave a post"** OR **+**
-- Write a word/any short phrase in the Q & A Chat box.
-
+.pull-left[
+- Click on the .darkpink[.thick[`r emo::ji("speech")` Q & A]] and Click on .darkpink[.thick["Leave a Post"]] OR .darkpink[.thick[+]]
+- Write a word/any short phrase in the .darkpink[.thick[`r emo::ji("speech")` Q & A]] Chat box.
+]
 --
-- You can vote `r emo::ji("+1")`<span style="color: lightgreen;">^</span> or vote down `r emo::ji('-1')`<span style="color: orange;">v</span>  or remain neutral `r emo::ji("deadpan")`(and)
+.pull-left[
+- You can vote up`r emo::ji("+1")` .lightgreen[.thick[^]] _or_
+.orange[.thick[vote down `r emo::ji('-1')`v]]  or 
+remain neutral `r emo::ji("deadpan")`(and)
 - you _can_ change your vote
+]
 --
+
 ```{r}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 library(countdown)
@@ -69,32 +69,37 @@ countdown(minutes = 3, play_sound = "../sound/ding.mp3", warn_when = 60)
 ```
 
 ---
-# Using Partici.fi (CODE: 20533883)
-
+# Using Partici.fi (CODE: 20533883) - Survey Mode!
+.center[
 ```{r echo=FALSE,out.height="80%",fig.align="top center"}
 knitr::include_graphics("img/particify.png")
-```
-
-- On the left side of screen, choose use the `r emo::ji("bar_chart")` to enter into **survey mode**  
-  - **What are you feeling right now ?**
-  - _You can choose more than one option!_
-```{r echo=FALSE,out.height="80%",fig.align="top center"}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 library(countdown)
 countdown(minutes = 3, play_sound = "../sound/ding.mp3", warn_when = 60)
 ```
+]
+.pull-left-wide[
+- On the left side of screen, choose use the `r emo::ji("bar_chart")` to enter into **survey mode**  
+  - **What are you feeling right now ?**
+  - _You can choose more than one option!_
+]
 ---
-# Using Partici.fi (CODE: 20533883)
-
-```{r echo=FALSE,out.width="100%",fig.align="top center"}
+# Using Partici.fi (CODE: 20533883) - Live poll!
+.center[
+```{r echo=FALSE,out.width="80%",fig.align="top center"}
 knitr::include_graphics("img/particify.png")
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 library(countdown)
 countdown(minutes = 1, play_sound = "../sound/ding.mp3", warn_when = 20)
 ```
+]
+.pull-left-wide[
+- Please choose ${\\ }^`r emo::ji("+1")`{\\  }_`r emo::ji("-1")`$
+]
+--
+.pull-left-wide[
 - **Have you all understood the use of partici.fi?**  
-- On left side please choose ${\\ }^`r emo::ji("+1")`{\\  }_`r emo::ji("-1")`$
-
+]
 ---
 # Results
 
@@ -103,29 +108,41 @@ https://ars.particify.de/present/20533883
 class: inverse, center, middle
 
 # Get Started
+---
+class: inverse, center, middle
+# Your Turn
+
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
+```
+
+- partici.fi CODE: 20533883 (SURVEY/QUIZ MODE)
+
+--
+- Post your responses to the question
+- **"What fosters efficient self-learning among medical students?"**
 
 ---
 # Metacognitive strategies
 
-- Fancy term for "thinking about cognitive skills"
+- "Thinking about thinking"
+- Probing into "why's" they are learning
+- Awareness of how & what they are learning
+- An evaluation of individual learning needs
+- Generating strategies to meet the needs 
+- Implementing the strategies
+- Monitoring, evaluating and modifying dynamically and contextually
 
 ---
+# Why metacognitive strategies?
 
-# Activity
-
-- All odd numbered persons turn around
-- Even number persons continue to watch the screen carefully
-
----
-
-# All turn back
-
-- Odd numbered people answer the question on your screen (Even numbered people please wait)
-
---
-- Even numbered people answer the question on your screen
-
----
+- Learners show self-confidence
+- Crucial for independent learning
+- Self-efficacy improves.
+- Fosters forethought & self-reflection
+- All these fosters self-regulated learning
 class:middle, center
 
 # Dual coding
@@ -135,7 +152,7 @@ knitr::include_graphics("img/ear.png")
 knitr::include_graphics("img/eye.png")
 ```
 
-Use **two modes** of content delivery  
+Use **two modes** of content delivery with spatio-temporal proximity.  
 ]
 --
 .center[
@@ -178,9 +195,10 @@ spatial proximity & non-repetitive
 
 # Lazy Teaching
 
-- What is better?
-  - 80 % portion covered in class & student studying 50% of taught lessons ?
-  - 50% coverage and student gaining 80% of your taught lessons ?
+- Two situations will be suggested below. Think for 30 seconds before answering in the poll.
+(A) 80 % portion covered in class & student studying 50% of taught lessons ?
+(B) 50% of portions covered in class & student gaining 80% of your lessons taught ?
+
 ---
 
 # Insight into "learning"
