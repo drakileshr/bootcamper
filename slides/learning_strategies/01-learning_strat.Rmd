@@ -36,14 +36,17 @@ __Akilesh Ramasamy__
 ]
 ]
 ---
-class: highlight-last-item
+class: highlight-last-item, doublespace
 
 ## Hello Senpai!
 
-- Asking for help: 
+.pull-left-wide[.large[
+- Asking for help:
   - We will be using [partici.fi](http://partici.fi) for all our live interactions.
-  - Type in chat in Q & A session (but if I don't see it, feel free to interrupt!). 
-  - Or just interrupt!
+  - Type in chat in Q & A session
+  - But if I don't see it, just interrupt!
+]]
+
 ---
 ## Using Partici.fi (CODE: 20533883) - Q&A Mode
 ```{r echo=FALSE,out.height="80%",fig.align="top center"}
@@ -55,9 +58,9 @@ knitr::include_graphics("img/particify.png")
 ]
 --
 .pull-left[
-- You can vote up`r emo::ji("+1")` .lightgreen[.thick[^]] _or_
-.orange[.thick[vote down `r emo::ji('-1')`v]]  or 
-remain neutral `r emo::ji("deadpan")`(and)
+- You can vote up`r emo::ji("+1")` .lightgreen[.thick[^]] _or_  
+vote down `r emo::ji('-1')`.orange[.thick[v]]  _or_  
+remain neutral `r emo::ji("deadpan")`
 - you _can_ change your vote
 ]
 --
@@ -109,22 +112,21 @@ class: inverse, center, middle
 
 # Get Started
 ---
-class: center, middle
-# Your Turn
+class: center, middle, doublespace
+## Your Turn
 
 ```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 library(countdown)
 countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
 ```
-
-- partici.fi CODE: 20533883 (Survey/Quiz Mode)
+partici.fi CODE: 20533883 -> `r emo::ji("bar_chart")` Quiz mode
 
 --
-- Post your responses to the question
+Post your response to the question
 .discussion[
-- .darkpink["What fosters efficient self-learning among medical students?"]
-]
+.darkpink[.thick["What fosters self-learning among medical students?"]
+]]
 ---
 class:doublespace
 
@@ -136,7 +138,7 @@ class:doublespace
 - Awareness of how & what they are learning
 --
 - An evaluation of individual learning needs
-- Generating strategies to meet the needs 
+- Generating strategies to meet the needs
 - Implementing the strategies
 --
 - Monitoring, evaluating and modifying dynamically and contextually
@@ -153,7 +155,27 @@ class:doublespace
 - All these fosters self-regulated learning
 
 ---
+class: top, doublespace
+## Your Turn!
 
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 2, play_sound = "../sound/ding.mp3", warn_when = 20)
+```
+
+Please pick the paper at the end of your table. Take one and pass it along to your neighbour!
+
+--
+.center[
+Start at the top left of the page ...
+
+.discussion[
+.darkpink[.thick["What is the worst that someone can say about your teaching  
+and it may still have some truth in it?"]
+]]
+]
+---
 ## Dual coding
 .center[
 ```{r echo=FALSE,fig.show='hold',out.width="10%",out.height="10%", fig.align='top left', fig.pos= "h"}
@@ -209,12 +231,10 @@ class:doublespace
 
 ## Lazy Teaching
 
-- Think silently for 30 seconds. 
-.discussion[
-  - (A) 80 % portion covered in class & student studying 50% of taught lessons ?
+- Think for 30 seconds. 
+.discussion[+ (A) 80 % portion covered in class & student studying 50% of taught lessons ?
 ]
-.discussion[
-  - (B) 50% of portions covered in class & student gaining 80% of your lessons taught ?
+.discussion[+ (B) 50% of portions covered in class & student gaining 80% of your lessons taught ?
 ]
 --
 - Present a justification to your answer for 30 - 60 seconds to your neighbour
@@ -222,17 +242,12 @@ class:doublespace
 ```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 library(countdown)
-countdown(minutes = 1, play_sound = "../sound/ding.mp3", warn_when = 10)
+countdown(minutes = 0,  seconds = 30, play_sound = "../sound/ding.mp3", warn_when = 10)
 ```
-
-```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
-knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
-library(countdown)
-countdown(minutes = 1, play_sound = "../sound/ding.mp3", warn_when = 10)
 ---
 class:doublespace
 
-# Insight into "learning"
+## Insight into "learning"
 
 - Some difficulty is GOOD for learning for all students
 - MORE difficult is BETTER for learning for some students
@@ -241,7 +256,7 @@ class:doublespace
 ---
 class:doublespace
 
-# Being inclusive and equitable
+## Being inclusive and equitable
 
 - Three levels of lesson objectives in your objectives
 
@@ -255,7 +270,7 @@ class:doublespace
   - A bar above the ideal (for those exemplar students) *Optional*
 ---
 
-# Activity 1: Active Learning
+## Activity 1: Active Learning
 
 - https://partici.fi (CODE: 20533883)  
 
@@ -278,7 +293,7 @@ https://ars.particify.de/present/20533883
 ---
 class:doublespace
 
-# Text Books
+## Text Books
 
 - **Do you suggest specific text-books and page numbers where to read something from ?**  
 - Do your students **know** how to read from a text-book?  
@@ -287,8 +302,9 @@ class:doublespace
 - Teach them to "skim" a topic **Before** class (PREVIEW)
 
 ---
+class:doublespace
 
-# Study Cycle (Not to confuse with "learning cycle")
+## Study Cycle (Not to confuse with "learning cycle")
 
 - Preview `r emo::ji("sunglasses")`
 
