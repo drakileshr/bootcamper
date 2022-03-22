@@ -2,7 +2,7 @@
 title: "From Theory to Practice: Teaching / Learning"
 output:
   xaringan::moon_reader:
-    css: ["../slides-style.css", "../xaringan-themer.css"]
+    css: ["../slides-style.css", "../xaringan-themer.css", "../custom.css"]
     lib_dir: libs
     chakra: "libs/remark-latest.min.js"
     nature:
@@ -45,7 +45,7 @@ class: highlight-last-item
   - Type in chat in Q & A session (but if I don't see it, feel free to interrupt!). 
   - Or just interrupt!
 ---
-# Using Partici.fi (CODE: 20533883) - Q&A Mode
+## Using Partici.fi (CODE: 20533883) - Q&A Mode
 ```{r echo=FALSE,out.height="80%",fig.align="top center"}
 knitr::include_graphics("img/particify.png")
 ```
@@ -61,15 +61,15 @@ remain neutral `r emo::ji("deadpan")`(and)
 - you _can_ change your vote
 ]
 --
-
-```{r}
+.pull-right-narrow[
+```{r echo = FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 library(countdown)
 countdown(minutes = 3, play_sound = "../sound/ding.mp3", warn_when = 60)
 ```
-
+]
 ---
-# Using Partici.fi (CODE: 20533883) - Survey Mode!
+## Using Partici.fi (CODE: 20533883) - Survey Mode!
 .center[
 ```{r echo=FALSE,out.height="80%",fig.align="top center"}
 knitr::include_graphics("img/particify.png")
@@ -84,7 +84,7 @@ countdown(minutes = 3, play_sound = "../sound/ding.mp3", warn_when = 60)
   - _You can choose more than one option!_
 ]
 ---
-# Using Partici.fi (CODE: 20533883) - Live poll!
+## Using Partici.fi (CODE: 20533883) - Live poll!
 .center[
 ```{r echo=FALSE,out.width="80%",fig.align="top center"}
 knitr::include_graphics("img/particify.png")
@@ -101,7 +101,7 @@ countdown(minutes = 1, play_sound = "../sound/ding.mp3", warn_when = 20)
 - **Have you all understood the use of partici.fi?**  
 ]
 ---
-# Results
+## Results
 
 https://ars.particify.de/present/20533883
 ---
@@ -109,7 +109,7 @@ class: inverse, center, middle
 
 # Get Started
 ---
-class: inverse, center, middle
+class: center, middle
 # Your Turn
 
 ```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
@@ -118,34 +118,43 @@ library(countdown)
 countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
 ```
 
-- partici.fi CODE: 20533883 (SURVEY/QUIZ MODE)
+- partici.fi CODE: 20533883 (Survey/Quiz Mode)
 
 --
 - Post your responses to the question
-- **"What fosters efficient self-learning among medical students?"**
-
+.discussion[
+- .darkpink["What fosters efficient self-learning among medical students?"]
+]
 ---
-# Metacognitive strategies
+class:doublespace
+
+## Metacognitive strategies
 
 - "Thinking about thinking"
+--
 - Probing into "why's" they are learning
 - Awareness of how & what they are learning
+--
 - An evaluation of individual learning needs
 - Generating strategies to meet the needs 
 - Implementing the strategies
+--
 - Monitoring, evaluating and modifying dynamically and contextually
 
 ---
-# Why metacognitive strategies?
+class:doublespace
 
-- Learners show self-confidence
+## Why metacognitive strategies?
+
+- Learners show **self-confidence**
 - Crucial for independent learning
-- Self-efficacy improves.
-- Fosters forethought & self-reflection
+- **Self-efficacy** improves.
+- Fosters **forethought & self-reflection**
 - All these fosters self-regulated learning
-class:middle, center
 
-# Dual coding
+---
+
+## Dual coding
 .center[
 ```{r echo=FALSE,fig.show='hold',out.width="10%",out.height="10%", fig.align='top left', fig.pos= "h"}
 knitr::include_graphics("img/ear.png")
@@ -156,7 +165,7 @@ Use **two modes** of content delivery with spatio-temporal proximity.
 ]
 --
 .center[
-Audio + visual]
+**Audio** + .darkpink[.thick[visual]]]
 --
 .center[
   Spatio-temporally linked
@@ -164,42 +173,64 @@ Audio + visual]
 ]
 --
 .center[
-.pull-left[
+.pull-left[.left[
 **Visual**  
 text, image  or both  
 ]
 ]
+]
 --
 .center[
-.pull-left[
+.pull-right[.left[
 **Image & Text**  
 spatial proximity & non-repetitive  
 ]
 ]
+]
 --
 .center[
-.pull-left[
+.pull-left[.left[
   **Visual Presentation & Audio**  
     temporal proximity & non-repetitive
 ]
 ]
+]
 --
 .center[
-.pull-left[
+.pull-right[.left[
   **Complement** each other  
     Non-repetitive
 ]
 ]
+]
 
 ---
+class:doublespace
 
-# Lazy Teaching
+## Lazy Teaching
 
-- Two situations will be suggested below. Think for 30 seconds before answering in the poll.
-(A) 80 % portion covered in class & student studying 50% of taught lessons ?
-(B) 50% of portions covered in class & student gaining 80% of your lessons taught ?
+- Think silently for 30 seconds. 
+.discussion[
+  - (A) 80 % portion covered in class & student studying 50% of taught lessons ?
+]
+.discussion[
+  - (B) 50% of portions covered in class & student gaining 80% of your lessons taught ?
+]
+--
+- Present a justification to your answer for 30 - 60 seconds to your neighbour
 
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 1, play_sound = "../sound/ding.mp3", warn_when = 10)
+```
+
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 1, play_sound = "../sound/ding.mp3", warn_when = 10)
 ---
+class:doublespace
 
 # Insight into "learning"
 
@@ -208,6 +239,7 @@ spatial proximity & non-repetitive
 - MOST difficult is BEST for learning, but only a few manage
 
 ---
+class:doublespace
 
 # Being inclusive and equitable
 
@@ -244,6 +276,7 @@ countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
 https://ars.particify.de/present/20533883
 
 ---
+class:doublespace
 
 # Text Books
 
@@ -280,7 +313,7 @@ https://ars.particify.de/present/20533883
 ---
 # Logistics (unused)
 
-- Everything in one place:[akileshr.github.io](http://akileshr.github.io)
+- Everything in one place:[drakileshr.github.io](http://drakileshr.github.io/bootcamper/slides/learning-strategies/01-learning_strat.html)
 
 --
 - Everything in one place: [localhost:8787](http://localhost:8787)

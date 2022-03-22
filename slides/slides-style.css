@@ -177,7 +177,7 @@ h1, h2, h3 {
 /* Square bullets for lists */
 
 ul{
-  line-height: 150%;
+  line-height: 125%;
 	position: relative;
 	list-style: none;
   margin-left: 1em;
@@ -191,7 +191,8 @@ ul li{
 }
 
 li:before {
-	content: ">";
+	/*content: ">";*/
+	content: "\2022"; /*added by Akilesh */
 	padding-right: 1em;
 	padding-left: 1em;
 }

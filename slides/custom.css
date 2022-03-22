@@ -1,0 +1,32 @@
+.darkpink{
+  color:rebeccapurple;
+}
+.thick{
+  font-weight: bold;
+}
+
+.lightgreen{
+  color:lightgreen;
+}
+
+.orange{
+  color: orange;
+}
+
+.doublespace{
+  line-height: 200%;
+}
+
+.doublespace ul{
+  line-height: 200%;
+	position: relative;
+	list-style: none;
+  margin-left: 1em;
+  padding-left: 0;
+}
+
+.doublespace ul li{
+  padding-left: 1em;
+  padding-bottom: 5px;
+  text-indent: -2.5em;
+}
