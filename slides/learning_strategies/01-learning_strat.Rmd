@@ -118,11 +118,46 @@ class: center, middle, doublespace
 ```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 library(countdown)
-countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
+countdown(minutes = 3, play_sound = "../sound/ding.mp3", warn_when = 30)
 ```
+
 partici.fi CODE: 20533883 -> `r emo::ji("bar_chart")` Quiz mode
 
+.discussion[
+.darkpink[.thick["In the paper you have, please write THREE main challenges you face as a medical education teacher when teaching students."]
+]]
+---
+class: center, middle, doublespace
+## Your Turn
+
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 1, play_sound = "../sound/ding.mp3", warn_when = 30)
+```
+
+.discussion[
+.darkpink[.thick[" Exchange your paper with the person on your RIGHT."]
+]]
+
 --
+
+.discussion[
+.darkpink[.thick[" Exchange your paper with the person on your LEFT."]
+]]
+
+---
+class: center, middle, doublespace
+## Your Turn
+
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
+```
+
+partici.fi CODE: 20533883 -> `r emo::ji("bar_chart")` Quiz mode
+
 Post your response to the question
 .discussion[
 .darkpink[.thick["What fosters self-learning among medical students?"]
@@ -130,18 +165,28 @@ Post your response to the question
 ---
 class:doublespace
 
-## Metacognitive strategies
+## Implementation perspectives of Metacognitive strategies
+- Planning
+  - "Thinking about thinking"
+  - Probing into "why" in learning  
+  - Awareness of how & what they are learning  
+  - An evaluation of individual learning needs  
+--
+- Designing
+  - Generating strategies to meet the needs  
+--
+- Piloting
+  - Pilot testing the design
+--
+- Implementation
+  - Implementing the strategies
+--
+- Monitoring & Evaluation
+--
+This is NOT linear. This is not a 'single cycle'.
 
-- "Thinking about thinking"
 --
-- Probing into "why's" they are learning
-- Awareness of how & what they are learning
---
-- An evaluation of individual learning needs
-- Generating strategies to meet the needs
-- Implementing the strategies
---
-- Monitoring, evaluating and modifying dynamically and contextually
+- Monitoring, evaluating and modifying dynamically and contextually  
 
 ---
 class:doublespace
