@@ -169,25 +169,38 @@ class:doublespace
 - Planning
   - "Thinking about thinking"
   - Probing into "why" in learning  
-  - Awareness of how & what they are learning  
+  - Awareness of how & what they are learning
   - An evaluation of individual learning needs  
---
-- Designing
-  - Generating strategies to meet the needs  
---
-- Piloting
-  - Pilot testing the design
---
-- Implementation
-  - Implementing the strategies
---
-- Monitoring & Evaluation
---
-This is NOT linear. This is not a 'single cycle'.
 
 --
-- Monitoring, evaluating and modifying dynamically and contextually  
+- Designing & developing the strategies to meet the needs  
+  - Documenting the rationale for design
+  - Evaluating the cost requirements (economic, time, human resources, technology requirements)
 
+---
+class:doublespace
+
+## Implementation perspectives of Metacognitive strategies (contd.)
+
+- Piloting (Test/Modify/Re-test/)  
+  - Piloting must be in alignment with implementation, monitoring and evaluation.
+  - Documenting the rationale for changes  
+    - Update the cost and value (tangible & intangible)  
+    - Possible the Short term and long term impacts
+
+---
+class:doublespace
+
+## Implementation perspectives of Metacognitive strategies (contd.)
+- Implementation of the strategies  
+  - Documenting the rationale & strategies
+  - Monitoring and evaluation must be built into the system & each process
+  - To plan M&E from beginning and not as an 'after thought'
+
+--
+- Monitoring & Evaluation (NOT linear / NOT one cycle)  
+  - Dynamic & contextualed
+  - Documenting the challenges and limitations of the M&E (contiuous improvement)
 ---
 class:doublespace
 
@@ -294,9 +307,13 @@ class:doublespace
 
 ## Insight into "learning"
 
-- Some difficulty is GOOD for learning for all students
-- MORE difficult is BETTER for learning for some students
-- MOST difficult is BEST for learning, but only a few manage
+- Some difficulty is GOOD for learning for all students  
+
+--
+- MORE difficult is BETTER for learning for some students  
+
+--
+- MOST difficult is BEST for learning, but only a few manage  
 
 ---
 class:doublespace
@@ -341,8 +358,15 @@ class:doublespace
 ## Text Books
 
 - **Do you suggest specific text-books and page numbers where to read something from ?**  
-- Do your students **know** how to read from a text-book?  
+
+--
+- Do your students **know** how to read from a text-book? 
+- Have you **verified** that they know how to read from a text-book?
+
+--
 - Book reading is an art ...
+
+--
 - Make them **read** text-books**
 - Teach them to "skim" a topic **Before** class (PREVIEW)
 
@@ -372,6 +396,94 @@ class:doublespace
 - Teach others `r emo::ji("professor")` `r emo::ji("student")`
 
 ---
+class:middle, highlight-last-item, doublespace
+
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
+```
+## How to implement "metacognitive learning strategies" ?
+- https://partici.fi (CODE: 20533883)  
+- Preview `r emo::ji("sunglasses")`
+
+---
+class:middle, highlight-last-item, doublespace
+
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
+```
+## How to implement "metacognitive learning strategies" ?
+- https://partici.fi (CODE: 20533883)  
+- Attend Class `r emo::ji("school")`  
+
+---
+class:middle, highlight-last-item, doublespace
+
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
+```
+## How to implement "metacognitive learning strategies" ?
+- https://partici.fi (CODE: 20533883)  
+- Make Notes `r emo::ji("writing_hand")`  
+
+---
+class:middle, highlight-last-item, doublespace
+
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
+```
+
+## How to implement "metacognitive learning strategies" ?
+- https://partici.fi (CODE: 20533883)  
+- Paraphrase - Expand & Condense `r emo::ji("books")`
+  
+---
+class:middle, highlight-last-item, doublespace
+
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
+```
+## How to implement "metacognitive learning strategies" ?
+- https://partici.fi (CODE: 20533883)  
+- Review/Revise `r emo::ji("bookmark")`
+
+---
+class:middle, highlight-last-item, doublespace
+
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
+```
+
+## How to implement "metacognitive learning strategies" ?
+- https://partici.fi (CODE: 20533883)  
+- Test Oneself `r emo::ji("interrobang")`
+  
+---
+class:middle, highlight-last-item, doublespace
+
+```{r echo=FALSE,out.width="100%",fig.align="top center", cache.lazy=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(countdown)
+countdown(minutes = 4, play_sound = "../sound/ding.mp3", warn_when = 60)
+```
+
+## How to implement "metacognitive learning strategies" ?
+- https://partici.fi (CODE: 20533883)  
+- Teach others `r emo::ji("professor")` `r emo::ji("student")`
+  
+---
+ 
 # Logistics (unused)
 
 - Everything in one place:[drakileshr.github.io](http://drakileshr.github.io/bootcamper/slides/learning-strategies/01-learning_strat.html)
